@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Isaac Parks Resume</title>
+	<style type="text/css">
+		* {				 /*<-																	  */
+			margin: 0;	 /*<- This helps keep the results the same when using different renderers */
+			padding: 0; }/*<- 																	  */
+
+		@font-face {
+  			font-family: "Mulish"; /* Mulish is the font being used for the title in the header */
+  			src: url(Fonts/static/Mulish/Mulish-Light.ttf);
+  			font-weight: Light; }
+
+		@font-face {
+  			font-family: "Lato"; /* Lato is the font being used for the contact info and teh paragraphs/dotpoints */
+  			src: url(Fonts/static/Lato/Lato-Regular.ttf);
+  			font-weight: normal; }
+
+		@font-face { /* WorkSans is the font being used for the section titles and teh footer */
+  			font-family: "WorkSans";
+  			src: url(Fonts/static/Work_Sans/WorkSans-Regular.ttf);
+  			font-weight: normal; }
+
+		.page { /* Setup a class for div containers, that will wrap all content in different */
+			height: 297mm ;
+			width: 210mm;
+			display: grid;
+			grid-template-rows: 3.68cm auto 45px; }/* first row is the header, second row is the content, third row is the footer. I have setup the header and footer size to look right, then the main content will fill the rest of the page */
+
+		header { /* The header section creates the title at the top of the page */
+  			display : flex;
+  			align-items : center;
+  			justify-content: center;
+			background-color: #22303D; /* this is a dark navy color */
+			height: 3.68cm;
+			width: 100%;
+			color: #E1D0A1; /* this is a gold color */
+			font-family: "Mulish";
+  			font-weight: Light;
+  			font-size: 45pt; 
+  			z-index: 100; }
+
+		.content { /* This class formats the main content of the resume */
+			display: grid; /* we want to display the two sections side by side */
+    		grid-template-columns: 3fr 7fr; /* the left column is the contact info and takes up the first 30% of the width,  the second colmun if for the main content of the resume and takes the remaing 70% of the div container */
+    		margin-left: 20px; 
+    		margin-right: 50px;
+    		color: #4C4A54; }/* set the color of the text int the contaent to a light grayish-black */
+
+		.contact { /* This class formats the contact side bar. The actual contact information is stored in a table to setupo the grid layout */
+			padding-top: 20px;
+			font-family: "Lato"; }
+
+		.contactIcon { /* This class formats the icons in the contact table */
+			width: 0.63cm;
+			height: 0.63cm;
+  			vertical-align: middle; }
+
+		.contactInfo {  /* This class formats the contact information in the contact table */
+			padding-left: 1px;
+  			font-size: 10pt;
+  			vertical-align: middle; }
+
+		.main { /* This div class contains the main content of the resume. It contains the sections CAREER OBJECTIVE, EDUCATION, CORE SKILLS, KEY WORK EXPERIENCE */
+			border-left: solid;
+			border-width: 2px;
+			border-color: #E1D0A1; /* this is a gold color */
+			padding-top: 20px; }
+
+		.section { /* This div class formats the different section titles */
+			border-bottom: solid;
+			border-width: 2px;
+			border-color: #E1D0A1; /* this is a gold color */
+			font-family: "WorkSans";
+			font-weight: bold;
+			padding-left: 10px; }
+
+		.info { /* This div class formats the paragrahps for the different sections */
+			padding-left: 10px;
+			padding-bottom: 20px; 
+			padding-top: 5px; 
+			font-family: "Lato";
+  			font-size: 10pt;
+  			line-height: 18pt; }
+
+		footer { /* format REFERENCES AVAILABLE UPON REQUEST part at the bottom of the page */
+			border-bottom: solid;
+			border-top: solid;
+			border-color: #E1D0A1;
+			border-width: 2px;
+			display: inline-block;
+			width: 210mm;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-bottom: 15px;
+			font-family: "WorkSans";
+			text-align: center;
+			font-size: 11pt;
+			font-weight: bold; }
+
+		ul{
+			padding-left: 20px; } /* By default the bullet points appear left of the divs left border. This padding pushes them in. */
+
+		a {
+			color: #4C4A54;
+			text-decoration: none; }
+	</style>
+</head>
+<body>
+	<div class="page">
+		<header>ISAAC PARK</header>
+		<div class=content>
+			<div class="contact">
+				<table>
+					<tr><td><img class="contactIcon" src=".\Images\mobile.png">  </td><td class="contactInfo">0450 540 056</td></tr>
+					<tr><td><img class="contactIcon" src=".\Images\email.png">   </td><td class="contactInfo"><email>Parki10@outlook.com</email></td></tr>
+					<tr><td><img class="contactIcon" src=".\Images\linkedin.png"></td><td class="contactInfo"><a href="https://www.LinkedIn.com/in/isaac-park-0">LinkedIn.com/in/isaac-park-0</a></td></tr>
+					<tr><td><img class="contactIcon" src=".\Images\github.png">  </td><td class="contactInfo"><a href="https://github.com/Isaac-Park-0">Github.com/Isaac-Park-0</a></td></tr>
+				</table>
+			</div><!--closes div for contact-->
+			<div class="main">
+				<div class="section">CAREER OBJECTIVE</div>
+				<div class="info">
+					To innovate, grow and succeed in as many of my endeavor’s as possible. I have a passion for continuously developing professionally and being the best I can be in all undertakings. I am a very motivated individual with a strong work ethic. My passion lies in physics, mathematics and programming. I am currently studying to build my experience with HTML, CSS and javascript and earn the MTA: Software Development Fundamentals certificate. I am working to leverage my strong problem solving and logical thinking skills to start a career in the tech field.
+				</div><!--closes div for info-->
+				<div class="section">EDUCATION</div>
+				<div class="info">
+					<div style="line-height: 12pt;">
+						<b>MTA: Software Development Fundamentals</b><br />
+						Learning People / May 2021 - Current
+					</div><br />
+					<div style="line-height: 12pt;">
+						<b>Bachelor of Science (Honours) Physics Major</b><br />
+						Swinburne University of Technology / February 2020 - November 2020<br />
+					</div><br />
+					<div style="line-height: 12pt;">
+						<b>Bachelor of Science (Professional) Physics Major</b><br />
+						Swinburne University of Technology / February 2016 - October 2019<br />
+					</div>
+				</div><!--closes div for info-->
+				<div class="section">CORE SKILLS</div>
+				<div class="info">
+					<ul>
+						<li>Python</li>
+						<li>SQL</li>
+						<li>Git</li>
+						<li>HTML5</li>
+						<li>Javascript</li>
+						<li>Microsoft Suite</li>
+						<li>Mathematics</li>
+					</ul>
+				</div><!--closes div for info-->
+				<div class="section">KEY WORK EXPERIENCE</div>
+				<div class="info">
+					<h4>Data Consultant at The Data Experience</h4>
+					<ul>
+						<li>Extensive use of SQL</li>
+						<li>Python programming</li>
+						<li>Utilising Tableau for data visualisation and automated reporting</li>
+						<li>Design, Develop and set up Swinburne’s financial database in Matillion using AWS</li>
+						<li>Analysis of business needs and development of strategies to address identified requirements</li>
+						<li>Working autonomously and as part of a team</li>
+					</ul>
+				</div><!--closes div for info-->
+			</div><!--closes div for main-->
+		</div><!--closes div for content-->
+		<footer>
+			REFERENCES AVAILABLE UPON REQUEST
+		</footer>
+	</div><!--closes div for first page-->
+</body>
+</html>
